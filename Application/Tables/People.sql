@@ -17,6 +17,7 @@ CREATE TABLE [Application].[People] (
     [Photo]                   VARBINARY (MAX) NULL,
     [CustomFields]            NVARCHAR (MAX)  NULL,
     [OtherLanguages]          AS              (json_query([CustomFields],N'$.OtherLanguages')),
+    [ServiceBranch]           SMALLINT        NULL,
     [LastEditedBy]            INT             NOT NULL,
     [ValidFrom]               DATETIME2 (7)   NOT NULL,
     [ValidTo]                 DATETIME2 (7)   NOT NULL,
