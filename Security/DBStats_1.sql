@@ -1,0 +1,5 @@
+CREATE USER [DBStats] FOR LOGIN [DBStats];
+
+
+GO
+
